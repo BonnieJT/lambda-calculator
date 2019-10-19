@@ -1,26 +1,12 @@
 import React from "react";
 
-const OperatorButton = () => {
+const OperatorButton = ({char, value}) => {
   return (
-    <>
-      {/* Display a button element rendering the data being passed down from the parent container on props */}
-    </>
+    <button className="calc-button operator-button">
+      {/* Display a button element rendering the data being passed down from the parent container on props */
+      char}
+    </button>
   );
 };
 
-
-// import React from "react";
-
-// // const OperatorButton = (props) => {
-// const OperatorButton = ({char,value}) => {
-
-//   return (
-//     <button className="calc-button operator-button">
-//       {/* Display a button element rendering the data being passed down from the parent container on props */}
-//       {/* {props.operatorChar} */}
-//       {char}
-//     </button>
-//   );
-// };
-
-// export default OperatorButton;
+export default OperatorButton;
