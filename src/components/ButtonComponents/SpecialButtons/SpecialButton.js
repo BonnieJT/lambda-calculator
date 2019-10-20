@@ -2,9 +2,9 @@ import React from "react";
 
 const SpecialButton = (props) => {
   return (
-    <button className="calc-button special-button">
+    <button onClick={() => props.clear(props.text)} className="calc-button special-button">
       {/* Display a button element rendering the data being passed down from the parent container on props */
-      props.special}
+      props.text}
     </button>
   );
 };
